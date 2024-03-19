@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+
+  <title>Filter Image</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-black" style="background-color: white;">
+    <div class="container px-5">
+      <img src="images/Imahge filter.png" alt="" style="width: 50px;">
+      <h3>IMG.FIL</h3>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav white justify-content-space-between">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="Uploaded.html">Uploads</a>
+      </div>
+
+    </div>
+    </div>
+  </nav>
+<div class="container ">
+  <div class="row my-4">
+    <div class="col-lg-6">
+
+    </div>
+    <div class="col-lg-6">
+      <button type="submit" value="upload" class="btn upload px-4" data-bs-target="#imageUploadModal" data-bs-toggle="modal"><i class="fa-solid fa-upload me-2" style="color: #ffffff;"></i>Upload</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="image-container">
+        <img src="images/campbell-3ZUsNJhi_Ik-unsplash.jpg" class="img-fluid mb-2 " alt="Sample Image" id="editableImage1" loading="lazy">
+        <button class="btn btn-primary edit-btn" style="display: none;">Edit</button>
+      </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="image-container">
+          <img src="images/harley-davidson-eeTJKC_wz34-unsplash.jpg" class="img-fluid mb-2 " alt="Sample Image" id="editableImage2" loading="lazy">
+          <button class="btn btn-primary edit-btn" style="display: none;">Edit</button>
+        </div>
+      </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-lg-3">
+      <div class="image-container">
+        <img src="images/lance-asper-N9Pf2J656aQ-unsplash.jpg" class="img-fluid mb-2 " alt="Sample Image" id="editableImage3" loading="lazy">
+        <button class="btn btn-primary edit-btn" style="display: none;">Edit</button>
+      </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="image-container">
+          <img src="images/peter-herrmann-Lbt-cZyOUM4-unsplash.jpg" class="img-fluid mb-2 " alt="Sample Image" id="editableImage4" loading="lazy">
+          <button class="btn btn-primary edit-btn" style="display: none;">Edit</button>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="image-container">
+          <img src="images/rachel-kelli-MLhzDGWnKPk-unsplash.jpg" class="img-fluid mb-2 " alt="Sample Image" id="editableImage5" loading="lazy">
+          <button class="btn btn-primary edit-btn" style="display: none;">Edit</button>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="image-container">
+          <img src="images/robert-bye-tG36rvCeqng-unsplash.jpg" class="img-fluid mb-2 " alt="Sample Image" id="editableImage6" loading="lazy">
+          <button class="btn btn-primary edit-btn" style="display: none;">Edit</button>
+        </div>
+      </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-lg-4">
+      <div class="image-container">
+        <img src="images/lily-banse--YHSwy6uqvk-unsplash.jpg" class="img-fluid mb-2 " alt="Sample Image" id="editableImage1" loading="lazy">
+        <button class="btn btn-primary edit-btn" style="display: none;">Edit</button>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="image-container">
+        <img src="images/davide-cantelli-jpkfc5_d-DI-unsplash.jpg" class=" img-fluid mb-2 " alt="Sample Image" id="editableImage1" loading="lazy">
+        <button class="btn btn-primary edit-btn" style="display: none;">Edit</button>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="image-container">
+        <img src="images/eaters-collective-12eHC6FxPyg-unsplash.jpg" class="img-fluid mb-2" alt="Sample Image" id="editableImage1" loading="lazy">
+        <button class="btn btn-primary edit-btn" style="display: none;">Edit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image Editor Modal -->
+
+<div class="modal fade" id="imageEditorModal" tabindex="-1" role="dialog" aria-labelledby="imageEditorModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document"> 
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageEditorModalLabel">Edit Image</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-6 col-md-12"> 
+            <img src="" id="editedImage" class="img-fluid" alt="Edited Image">
+            <div class="form-group image-filter">
+              <label for="filter">Choose Filter:</label>
+              <select class="form-control" id="filter">
+                <option value="none">None</option>
+                <option value="grayscale">Grayscale</option>
+                <option value="sepia">Sepia</option>
+                <option value="contrast">Contrast</option>
+                <option value="brightness">Brightness</option>
+              </select>
+            </div>
+            <div id="filterOptions" class="form-group" style="display: none;">
+              <label for="filterValue">Filter Value:</label>
+              <input type="range" class="form-control-range" id="filterValue" min="0" max="100" step="1">
+            </div>
+            <div class="row mt-2">
+              <div class="col-lg-6">
+                <button class="btn btn-success mt-3 btn-block" id="applyFilterBtn">Apply Filter</button>
+              </div>
+              <div class="col-lg-6">
+                <button class="btn btn-primary mt-3 btn-block" id="resetFilterBtn">Reset Filter</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="title">
+            </div>
+            <div class="form-group">
+              <label for="format">Format</label>
+              <select class="form-control" id="format">
+                <option value="png">PNG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="jpg">JPG</option>
+              </select>
+            </div>
+            <button class="btn btn-success mt-3 btn-block" id="downloadBtn">Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Image uploads--------->
+
+<div class="modal fade" id="imageUploadModal" tabindex="-1" role="dialog" aria-labelledby="imageuploadModalLabel" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered modal-lg modal-md modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageUploadModalLabel">Upload Image</h5>
+        <button type="button" class="Close" data-dismiss="modal" aria-label="Close" onclick="closeModal()"> 
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body vh-100">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+              <img id="uploadedImage" src="" alt="Uploaded Image" class="img-fluid">
+            <input type="file" id="file" accept="image/*" class="mt-4">
+            <div class="form-group image-filter">
+              <label for="filter">Choose Filter:</label>
+              <select class="form-control" id="filter2">
+                <option value="none">None</option>
+                <option value="grayscale">Grayscale</option>
+                <option value="sepia">Sepia</option>
+                <option value="contrast">Contrast</option>
+                <option value="brightness">Brightness</option>
+              </select>
+            </div>
+            <div id="filterOptions2" class="form-group mt-4" style="display: none;">
+              <label for="filterValue">Filter Value:</label>
+              <input type="range" class="form-control-range" id="filterValue2" min="0" max="100" step="1">
+            </div>
+            <div class="row my-3">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <button class="btn btn-success mt-3 btn-block px-2" id="applyFilterBtn2" style="font-size: 14px">Apply Filter</button>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <button class="btn btn-primary mt-3 btn-block px-2" id="resetFilterBtn2" style="font-size: 14px;">Reset Filter</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="title2">
+            </div>
+            <div class="form-group">
+              <label for="format">Format</label>
+              <select class="form-control" id="format2">
+                <option value="png">PNG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="jpg">JPG</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-success mt-3 btn-block" id="downloadBtn2">Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
